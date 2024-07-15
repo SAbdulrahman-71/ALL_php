@@ -97,10 +97,195 @@
     function displaythis(array $name)
     {
     }
+    ?>
+
+
+    <hr>
+
+    <?php
+    echo strlen("Hello world!");
+    echo "<hr>";
+    echo str_word_count("Hello world!");
+    echo "<hr>";
+    echo strpos("Hello world!", "world");
+    echo "<hr>";
+    $x = 5;
+    echo "The price is $x";
+    echo "<hr>";
+    $p = "Say Hi to world";
+    echo strtolower($p);
+    echo strtoupper($p);
+    echo str_replace("world", "Velosi", $p);
+    echo strrev($p);
+    echo "<hr>";
+    $q = explode(" ", $p);
+    print_r($q);
+
+    echo "<hr>";
+    $x = "Hello World!";
+    echo substr($x, 6, 5);
+    echo substr($x, 6);
+    echo substr($x, -5, 3);
+    echo "<hr>";
+    $x = "We are the so-called \"Vikings\" from the no\nrth.";
+    echo $x;
+    echo "<hr>";
+    $x = 5985;
+    var_dump(is_int($x));
+
+    $x = 59.85;
+    var_dump(is_int($x));
+    echo "<hr>";
+    $x = acos(8);
+    var_dump($x);
+    echo "<hr>";
+    $x = 5985;
+    var_dump(is_numeric($x));
+
+    $x = "5985";
+    var_dump(is_numeric($x));
+    $x = "59.85" + 100;
+    var_dump(is_numeric($x));
+
+    $x = "Hello";
+    var_dump(is_numeric($x));
+    echo "<hr>";
+
+    echo "<hr>";
+
+    echo "<hr>";
+
+    ?>
+
+
+
+    <?php
+
+    $a = 5;       // Integer
+    $b = 5.34;    // Float
+    $c = 0;       // Integer
+    $d = -1;      // Integer
+    $e = 0.1;     // Float
+    $f = "hello"; // String
+    $g = "";      // String
+    $h = true;    // Boolean
+    $i = NULL;    // NULL
+
+    echo "$a $b $c $d $e $f $g $h $i <br>";
+    $a = (bool) $a;
+    $b = (bool) $b;
+    $c = (bool) $c;
+    $d = (bool) $d;
+    $e = (bool) $e;
+    $f = (bool) $f;
+    $g = (bool) $g;
+    $h = (bool) $h;
+    $i = (bool) $i;
+    echo "$a $b $c $d $e $f $g $h $i <br> <hr>";
+    echo "<hr>";
+    class Car
+    {
+        public $color;
+        public $model;
+        public function __construct($color, $model)
+        {
+            $this->color = $color;
+            $this->model = $model;
+        }
+        public function message()
+        {
+            return "My car is a " . $this->color . " " . $this->model . "!";
+        }
+    }
+
+    $myCar = new Car("red", "Volvo");
+    var_dump($myCar);
+
+    $myCar = (array) $myCar;
+    var_dump($myCar);
+
+    echo "<hr>";
+    define("cars", [
+        "Alfa Romeo",
+        "BMW",
+        "Toyota"
+    ]);
+
+    print_r(cars);
+    echo "<hr>";
+    $a = 13;
+
+    $b = $a < 10 ? "Hello" : "Good Bye";
+
+    echo $b;
+    echo "<hr>";
+    $i = 0;
+    while ($i < 6) {
+        $i++;
+        if ($i == 3) continue;
+        echo $i;
+    }
+    echo "<hr>";
+    $i = 0;
+    while ($i < 100) {
+        $i += 10;
+        echo "$i <br>";
+    }
+    echo "<hr>";
+
+
+    $members = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+
+    foreach ($members as $x => $y) {
+        echo "$x : $y <br>";
+    }
+
+
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+    echo "<hr>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     ?>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
